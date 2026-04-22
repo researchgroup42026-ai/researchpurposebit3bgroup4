@@ -1,0 +1,122 @@
+/* ============================================
+   Analytics & Reports Styles
+   ============================================ */
+
+.analytics-sidebar {
+    background: transparent;
+    padding: 20px !important;
+    border-radius: var(--radius-lg);
+}
+
+.analytics-info-box h4 {
+    color: #333;
+    margin: 0 0 8px 0;
+    font-size: 1.1rem;
+}
+
+.analytics-info-box p {
+    color: #666;
+    margin: 0 0 15px 0;
+    font-size: 0.9rem;
+}
+
+.analytics-stats {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.analytics-stats .stat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0;
+    word-break: break-word;
+}
+
+.analytics-stats .stat-label {
+    color: #555;
+    font-size: 0.9rem;
+    flex: 1;
+    margin-right: 8px;
+}
+
+.analytics-stats .stat-value {
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 0.95rem;
+    white-space: nowrap;
+    margin-left: 8px;
+    text-align: right;
+}
+
+.analytics-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.analytics-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    box-shadow: var(--shadow-md);
+    border-top: 4px solid #3498db;
+}
+
+.analytics-card h3 {
+    margin: 0 0 15px 0;
+    color: #333;
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ecf0f1;
+}
+
+.analytics-card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.analytics-card thead {
+    background: #f8f9fa;
+}
+
+.analytics-card th {
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    color: #555;
+    border-bottom: 2px solid #ddd;
+    font-size: 0.9rem;
+}
+
+.analytics-card td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+}
+
+.analytics-card tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.no-data-message {
+    text-align: center;
+    padding: 30px 20px;
+    color: #999;
+    border-radius: var(--radius-md);
+    background: #f9f9f9;
+}
+
+.no-data-message p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 1024px) {
+    .analytics-cards {
+        grid-template-columns: 1fr;
+    }
+}

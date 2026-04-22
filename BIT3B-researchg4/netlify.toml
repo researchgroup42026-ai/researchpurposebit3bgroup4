@@ -1,0 +1,9 @@
+[build]
+  command = ""
+  publish = "html"
+
+[[redirects]]
+  from = "/"
+  to = "/Login.html"
+  status = 200
+  force = true
